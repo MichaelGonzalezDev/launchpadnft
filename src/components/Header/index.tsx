@@ -132,7 +132,7 @@ const Header: React.FC = () => {
         <div className="flex items-center gap-4 text-white">
             <div className="text-xl">My NFTs</div>
             <button id="dropdownButton" data-dropdown-toggle="dropdown" className="p-2 text-xl bg-blue-800 border-2 hover:bg-blue-600">
-              Dropdown button 
+              Connect Wallet
             </button>
             <div id="dropdown" className="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
               <ul className="py-1" aria-labelledby="dropdownButton">
