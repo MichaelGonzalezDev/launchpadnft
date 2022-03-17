@@ -32,7 +32,7 @@ function getLibrary(provider: any): Web3Provider {
 
 ReactDOM.render(
   <Web3ReactProvider getLibrary={getLibrary}>
-      <App />,
+      <App />
   </Web3ReactProvider>,
   document.getElementById('root')
 );

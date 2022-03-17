@@ -2,6 +2,8 @@ import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css';
 import Dashboard from './view/Dashboard';
+import MyNFT from './view/MyNFT';
+import PixelCity from './components/Collectibles/PixelCity';
 
 
 const App: React.FC = () => {
@@ -12,6 +14,8 @@ const App: React.FC = () => {
           <div>
             <Switch>
               <Route exact path="/" component={Dashboard} />
+              <Route exact path="/mynft" component={MyNFT} />
+              <Route exact path="/collectibles/pixelcity" component={PixelCity} />
             </Switch>
           </div>
         </div>

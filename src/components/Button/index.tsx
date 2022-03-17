@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({title, className}) => {
   return (
-    <button className={`p-2 text-xl bg-blue-500 border-2 rounded-lg hover:bg-blue-600 ${className}`}>{title}</button>
+    <button className={`px-6 py-2 text-xl bg-blue-500 border-2 rounded-lg hover:bg-blue-600 ${className}`}>{title}</button>
   );
 }
 

@@ -3,12 +3,11 @@ import { NavLink } from "react-router-dom";
 import { UnsupportedChainIdError, useWeb3React } from '@web3-react/core'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { AbstractConnector } from '@web3-react/abstract-connector'
-// import { WalletConnectConnector } from '@web3-react/walletconnect-connector'
 import ReactGA from 'react-ga'
 import "flowbite";
 import Logo from "../../assets/logo.png"
 
-const injected = new InjectedConnector({ supportedChainIds: [1, 25, 56] })
+const injected = new InjectedConnector({ supportedChainIds: [25, 338, 97] })
 
 const WALLET_VIEWS = {
   OPTIONS: 'options',
@@ -122,25 +121,25 @@ const Header: React.FC = () => {
   }
 
   return (
-    <div className="flex justify-between py-4 bg-blue-700 px-28">
+    <div className="flex justify-between px-4 py-4 rounded-b-lg bg-rose-400 drop-shadow-2xl md:px-28">
         <div className="flex items-center gap-4">
             <NavLink to="/" className="w-20 h-20">
                 <img src={Logo} alt="logo" />
             </NavLink>
-            <div className="text-3xl text-white font-Roboto">Pixel City</div>
+            <div className="text-2xl text-white md:text-5xl drop-shadow-2xl font-Roboto">Pixel City</div>
         </div>
         <div className="flex items-center gap-4 text-white">
-            <div className="text-xl">My NFTs</div>
-            <button id="dropdownButton" data-dropdown-toggle="dropdown" className="p-2 text-xl bg-blue-800 border-2 hover:bg-blue-600">
-              Connect Wallet
+            <a href="/mynft" className="text-xl">My NFTs</a>
+            <button id="dropdownButton" data-dropdown-toggle="dropdown" className="px-2 py-2 text-base border-2 rounded-lg md:text-lg md:px-6 bg-emerald-900 hover:bg-blue-600">
+              {active? 'Wallet connected' : 'Connect Wallet'}
             </button>
             <div id="dropdown" className="z-10 hidden text-base list-none bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
               <ul className="py-1" aria-labelledby="dropdownButton">
-                <li>
+                <li className="hover:cursor-pointer">
                   {active? <a onClick={disconnect} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Disconnect metamask</a>:
                   <a onClick={()=> tryActivation(SUPPORTED_WALLETS.METAMASK.connector)} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Connect metamask</a>}
                 </li>
-                <li>
+                <li className="hover:cursor-pointer">
                   <a onClick={()=> {tryActivation(SUPPORTED_WALLETS.CRYPTO_WALLET.connector); disconnect()}} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Connect Crypto Defi Wallet</a>
                 </li>
               </ul>
