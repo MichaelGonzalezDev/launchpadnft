@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { UnsupportedChainIdError, useWeb3React } from '@web3-react/core'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { AbstractConnector } from '@web3-react/abstract-connector'
@@ -129,7 +129,9 @@ const Header: React.FC = () => {
             <div className="text-2xl text-white md:text-5xl drop-shadow-2xl font-Roboto">Pixel City</div>
         </div>
         <div className="flex items-center gap-4 text-white">
-            <a href="/mynft" className="text-xl">My NFTs</a>
+            <Link to="/mynftpage" className="text-xl">
+              My NFTs
+            </Link>
             <button id="dropdownButton" data-dropdown-toggle="dropdown" className="px-2 py-2 text-base border-2 rounded-lg md:text-lg md:px-6 bg-emerald-900 hover:bg-blue-600">
               {active? 'Wallet connected' : 'Connect Wallet'}
             </button>

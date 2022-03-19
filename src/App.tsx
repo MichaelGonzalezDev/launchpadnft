@@ -13,9 +13,9 @@ const App: React.FC = () => {
         <div className='bg-cover'>
           <div>
             <Switch>
+              <Route path="/mynftpage" component={MyNFT} />
+              <Route path="/collectibles/pixelcity" component={PixelCity} />
               <Route exact path="/" component={Dashboard} />
-              <Route exact path="/mynft" component={MyNFT} />
-              <Route exact path="/collectibles/pixelcity" component={PixelCity} />
             </Switch>
           </div>
         </div>
