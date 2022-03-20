@@ -121,7 +121,7 @@ const Header: React.FC = () => {
   }
 
   return (
-    <div className="flex justify-between px-4 py-4 rounded-b-lg bg-rose-400 drop-shadow-2xl md:px-28">
+    <div className="flex justify-between px-4 py-4 bg-blue-700 rounded-b-lg drop-shadow-2xl md:px-28">
         <div className="flex items-center gap-4">
             <NavLink to="/" className="w-20 h-20">
                 <img src={Logo} alt="logo" />

@@ -40,7 +40,7 @@ const PixelCity: React.FC = () => {
 
   return (
     <>
-      <div className='justify-center bg-gradient-to-b from-amber-100 to-slate-0'>
+      <div className='justify-center bg-white'>
         <Header />
         <img src={collectibleImage} alt='pixelcity' className='pt-5 mx-auto h-80' />
         <div className='items-center justify-center px-4 mx-auto md:w-1/2'>

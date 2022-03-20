@@ -7,7 +7,7 @@ import Logo from "../../assets/logo.png"
 
 const Dashboard: React.FC = () => {
   return (
-    <div className='h-full mx-auto mb-0 bg-gradient-to-b from-amber-100 to-slate-0'>
+    <div className='h-full mx-auto mb-0 bg-white'>
       <Header />
       <div className='w-8/12 p-16 mx-auto'>
         <div className='items-center gap-10 mb-4 lg:flex'>
