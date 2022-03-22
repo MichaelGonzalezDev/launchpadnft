@@ -36,9 +36,9 @@ const MyNFT: React.FC = () => {
   }, [urls, show])
   
   return (
-    <div className='h-full mx-auto mb-0 bg-gradient-to-b from-amber-100 to-slate-0'>
+    <div className='h-full mx-auto mb-0 bg-gradient-to-b from-blue-100 to-slate-0'>
       <Header />
-      <button onClick={() => setShow(true)} className="w-full px-2 my-10 text-5xl text-center text-emerald-600 hover:text-emerald-500 hover:cursor-pointer">See My NFTs</button>
+      <button onClick={() => setShow(true)} className="w-full px-2 my-10 text-5xl text-center text-black-600 hover:text-black-500 hover:cursor-pointer">See My NFTs</button>
       <div className='items-center justify-center w-2/3 gap-4 mx-auto mb-4 space-y-6 md:px-10'>
         {show && 
           (account ?
