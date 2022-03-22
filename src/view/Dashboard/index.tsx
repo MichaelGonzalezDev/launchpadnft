@@ -15,9 +15,9 @@ const Dashboard: React.FC = () => {
           <div className='space-y-2'>
             <div className='text-[36px] mb-6'> NFT Museum in Las Vegas Nevada</div>
             <div>Pixel City is an NFT Launchpad that supports the minting and launch of NFT projects.
-            Pixel City is sharing 50% of the revenue earned from our launchpad with our VIP NFT holders!
+            Pixel City is sharing 50% of the revenue earned from our launchpad with our NFT holders!
             </div>
-            <div>Built by Pixel Network.</div>
+            <div>Built by Pixel City.</div>
             <a href='https://forms.gle/ZQiG5ukXRwy64rr29' target="_blank"><Button title='Apply' /></a>
           </div>
         </div>
